@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pozicioniranje</title>
+    <style>
+        #d1 {
+            background-color: rgb(109, 109, 16);
+            width: 500px;
+            position: relative;
+            /*Relativno u odnosno na normalnu poziciju*/
+            top: 10px;
+            left: 50px;
+        }
+
+        #d2 {
+            position: absolute;
+            /*Absolutno u odnosu na celu stranicu u ovom slucaju*/
+            top: 22px;
+            left: 13px;
+            background-color: cadetblue;
+            width: 700px;
+        }
+
+        #d3 {
+            background-color: chocolate;
+            width: 590px;
+            height: 150px;
+            position: relative;
+            top: 50px;
+            left: 90px;
+        }
+
+        #d3 span {
+            position: absolute;
+            
+            right: 70px;
+        }
+
+
+        #d4{
+            background-color: darkblue;
+            width: 500px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="d1">Tekst 1</div>
+    <div id="d2">Tekst 2</div>
+
+    <div id="d3">
+        <span>Neki Tekst</span>
+    </div>
+
+    <div id="d4">
+        Tralala
+    </div>
+
+</body>
+
+</html>

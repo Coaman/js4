@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0%;
+        }
+
+        #gornji ul {
+            overflow: hidden;
+            list-style-type: none;
+            padding: 0;
+            background-color: rgb(51, 34, 9);
+        }
+
+        #gornji ul li {
+            float: left;
+            width: 25%;
+            text-align: center;
+        }
+
+        #gornji ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 14px;
+            display: block;
+        }
+
+        #gornji ul li a:hover {
+            background-color: rgb(145, 168, 168);
+        }
+
+        .submenu {
+            position: absolute;
+            background-color: tomato;
+            width: 25%;
+            display: none;
+        }
+
+        .dropdown:hover .submenu {
+            display: block;
+        }
+
+
+        footer{
+            position:fixed;
+            bottom: 0;
+            width: 25%;
+            background-color: yellowgreen;
+        }
+        footer ul li a{
+            text-decoration: none;
+            display: block;
+            padding: 20px;
+            
+        }
+        footer ul li a:hover{
+            color: tomato;
+            background-color: violet;
+
+        }
+        
+    </style>
+</head>
+
+<body>
+    <nav id="gornji">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Our Mission</a></li>
+            <li><a href="#">Our Costumers</a></li>
+            <li class="dropdown">
+                <a href="#">Our Ingrediants</a>
+                <div class="submenu">
+                    <a href="#">Jole Vukic</a>
+                    <a href="#">Pera Preric</a>
+                    <a href="#">Mitar Miric</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+
+    <footer>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Our Mission</a></li>
+            <li><a href="#">Our Costumers</a></li>
+            <li><a href="#">Our Ingrediants</a></li>
+        </ul>
+
+    </footer>
+
+</body>
+
+</html>
